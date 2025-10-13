@@ -9,6 +9,9 @@
     display: flex;
     justify-content: center;
 }
+h3{
+    font-size: 30px;
+}
 .body{
     background-color: #fff;
     width: 100%;
@@ -31,7 +34,7 @@
     gap: 10%;
 }
 .sections{
-    padding: 1% 10%;
+    padding: 3% 10%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -54,13 +57,14 @@
 }
 .cards{
     display: flex;
-    flex-direction: column;
+
     padding: 2% 0%;
     justify-content: center;
+    align-self: center;
 }
 #write{
-   display: grid;
-   grid-template-columns:repeat(2,1fr);
+   display: flex;
+   
    font-size: 20px;
    gap: 10px;
    width: 100%;
@@ -93,23 +97,35 @@ a{
 #Language{
     display: grid;
 }
+.prolan-container{
+    max-width: 30%;
+    align-self: center;
+}
 .prolang{
-    display: grid;
-    grid-template-columns:repeat(8,0fr);
+    width: 100%;
+    display: flex;
+    width: calc(100px * 9);
+    justify-content: space-evenly;
+    animation: scroll 20s linear infinite;
+    column-gap: 5rem;
     padding: 5px;
     gap: 20px;
+    align-self: center;
 }
+
 .logo{
     width: 50px;
 }
 
 .sites{
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
     font-size: 20px;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
     border-radius: 5px;
+    width: 70%;
+    align-self: center;
 }
 .sites div{
     display: flex;
@@ -135,4 +151,19 @@ a{
 
 #contlogo{
     width: 30px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#conta{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.cont{
+    padding: 20px;
 }
